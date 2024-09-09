@@ -24,6 +24,14 @@ body {
   margin-right: 50px;  /* Adjust these values to your preference */
 }
 
+/* Responsive adjustments for page wrapper */
+@media (max-width: 768px) {
+  .page-wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
 /* Styling the navbar */
 nav {
   background-color: var(--secondary-bg);
@@ -38,8 +46,8 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
-  margin: 20px;
+  display: inline-block; /* Changed to inline-block to allow for responsive adjustments */
+  margin: 10px; /* Reduced margin for smaller screens */
 }
 
 nav a {
@@ -58,6 +66,7 @@ nav a:hover {
   align-items: center;
   padding: 20px;
   margin-top: 20px;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
 }
 
 /* Left side content (Name and details) */
@@ -65,36 +74,17 @@ nav a:hover {
   max-width: 50%;
 }
 
-h1 {
-  font-size: 6rem;
-  font-weight: 600;
-  color: var(--secondary-color);
-  margin: 0;
-  opacity: 0;
-  animation: fadeInFront 1s forwards;
-}
+/* Responsive adjustments for main content */
+@media (max-width: 768px) {
+  .main-left {
+    max-width: 100%;
+    text-align: center; /* Center align text on smaller screens */
+  }
 
-p.cs-info {
-  font-size: 1.2rem;
-  color: var(--accent-color);
-  margin-top: 65px; /* Increased margin to create vertical space */
-}
-
-/* Contact links centered under image */
-.contact-links {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.contact-links a {
-  display: block;
-  color: var(--text-color);
-  text-decoration: none;
-  margin-top: 5px;
-}
-
-.contact-links a:hover {
-  color: var(--accent-color);
+  .main-right img {
+    width: 100%;
+    height: auto; /* Ensure image scales proportionally */
+  }
 }
 
 /* Right side content (Image) */
@@ -135,7 +125,6 @@ p.cs-info {
   margin-top: 10px;
 }
 
-
 /* About Me section */
 .about-me {
   padding: 20px;
@@ -144,7 +133,7 @@ p.cs-info {
 
 .about-me h2 {
   font-size: 2rem;
-  color: var(--accent-color); /* Matching the description color */
+  color: var(--accent-color);
 }
 
 .about-me p {
@@ -171,12 +160,14 @@ p.cs-info {
 .skills ul li {
   margin-top: 10px;
 }
+
 /* Experience Tile Styles */
 .tile-container {
   display: flex;
   justify-content: space-between;
   gap: 70px; /* Space between the tiles */
   margin: 175px 0;
+  flex-wrap: wrap; /* Allow tiles to wrap on smaller screens */
 }
 
 .tile {
@@ -189,8 +180,20 @@ p.cs-info {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Responsive adjustments for tiles */
+@media (max-width: 768px) {
+  .tile-container {
+    gap: 20px; /* Reduced gap for smaller screens */
+    margin: 20px 0; /* Reduced margin for smaller screens */
+  }
+
+  .tile {
+    flex: 1 1 100%; /* Tiles stack vertically on smaller screens */
+  }
+}
+
 .tile h3 {
-  color: var(--accent-color); /* Title color */
+  color: var(--accent-color);
 }
 
 .tile p {
