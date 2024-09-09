@@ -51,12 +51,12 @@ nav ul li {
 }
 
 nav a {
-  color: var(--accent-color); /* Explicitly set link color */
+  color: var(--text-color);
   text-decoration: none;
 }
 
 nav a:hover {
-  color: var(--text-color); /* Set hover color if needed */
+  color: var(--accent-color);
 }
 
 /* Main content styles */
