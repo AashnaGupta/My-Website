@@ -21,7 +21,7 @@ body {
 /* Page-wide wrapper with left/right margins */
 .page-wrapper {
   margin-left: 50px;   /* Adjust these values to your preference */
-  margin-right: 50px;  /* Adjust these values to your preference */
+  margin-right: 100px;  /* Adjust these values to your preference */
 }
 
 /* Styling the navbar */
