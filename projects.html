@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience | Aashna Gupta's Portfolio</title>
+    <title>Projects | Aashna Gupta's Portfolio</title>
     <!-- Link to Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
     <link rel="stylesheet" href="style.css">
@@ -19,47 +19,49 @@
         </ul>
     </nav>
 
-    <div class="page-wrapper"> <!-- Wrapper for applying margins -->
-
+    <div class="page-wrapper">
         <!-- Projects Section -->
         <div class="tile-container">
-          <!-- Simple C Compiler -->
-          <div class="tile">
-              <h3>Simple C Compiler</h3>
-              <p> Assembly x86-64, C<br><br></p>
-              <ul>
-                  <li>Used knowlegde of computer architecture to create a compiler that could parse Simple C code using Lex and Yacc, to generarte the Assembly x86-64 code. </li>
-              </ul>
-          </div>
-      
-          <!-- Face Recognition App -->
-          <div class="tile">
-              <h3>Face Recognition App</h3>
-              <p>Python, Flask, Rest APIs, OpenCV, HTML, Heroku, Git<br><br></p>
-              <ul>
-                  <li>Built Machine Learning model for classification to automatically detect faces from images and videos</li>
-                  <li>Integrated the model in a Flask App with an HTML front end to display results, and deployed onto Heroku Cloud</li>
-                  <li>Learned how to work with APIs, practiced cleaning and organizing data for creating and training ML models.</li>
-    
+            <!-- PDF Chatbot -->
+            <div class="tile">
+                <h3>PDF Chatbot</h3>
+                <p><strong>Technologies:</strong> Python, Streamlit, Hugging Face, FAISS, SentenceTransformer, PyPDF2, Git</p>
+                <ul>
+                    <li>Engineered a PDF-based chatbot leveraging FAISS for vector storage and similarity search with embeddings from SentenceTransformer. Integrated Hugging Face FLAN-T5 for sequence-to-sequence natural language processing.</li>
+                    <li>Developed an interactive Streamlit interface for real-time query handling, incorporating optimized text chunking via RecursiveCharacterTextSplitter to process and retrieve context from large PDF documents efficiently.</li>
+                </ul>
+            </div>
 
-              </ul>
-          </div>
-      
-          <!-- E- Commerce Marketplace -->
-          <div class="tile">
-              <h3>E- Commerce Marketplace</h3>
-              <p>Java, Git, JUnit, IntelliJ</p>
-              <ul>
-                  <li>Developed the backend and frontend of a fully functioning multi-threaded online store with a seller side and a buyer
-                    side where the users can create accounts and use the respective features (buy product vs create product, etc.)</li>
-                  <li>Enhanced using filter by description, date, price, etc. options. Includes an easy-to-use GUI and test cases for each
-                    function written in JUnit.</li>
-              </ul>
-          </div>
-      </div>
+            <!-- Simple C Compiler -->
+            <div class="tile">
+                <h3>Simple C Compiler</h3>
+                <p><strong>Technologies:</strong> Assembly x86-64, C</p>
+                <ul>
+                    <li>Used knowledge of computer architecture to create a compiler that could parse Simple C code using Lex and Yacc, to generate Assembly x86-64 code.</li>
+                </ul>
+            </div>
 
+            <!-- Face Recognition App -->
+            <div class="tile">
+                <h3>Face Recognition App</h3>
+                <p><strong>Technologies:</strong> Python, Flask, Rest APIs, OpenCV, HTML, Heroku, Git</p>
+                <ul>
+                    <li>Built and trained a machine learning-based facial recognition classification model using OpenCV, integrated with a Flask backend and an HTML front end for real-time image and video detection.</li>
+                    <li>Deployed the application on Heroku, leveraging API integration and optimized preprocessing to ensure high accuracy and responsiveness.</li>
+                </ul>
+            </div>
 
-    </div> <!-- End of page-wrapper -->
+            <!-- E-Commerce Marketplace -->
+            <div class="tile">
+                <h3>E-Commerce Marketplace</h3>
+                <p><strong>Technologies:</strong> Java, Git, JUnit, IntelliJ</p>
+                <ul>
+                    <li>Developed the backend and frontend of a fully functioning multi-threaded online store with a seller side and a buyer side where users can create accounts and use respective features (e.g., buy product, create product).</li>
+                    <li>Enhanced with filter options (by description, date, price, etc.), an intuitive GUI, and comprehensive test cases written in JUnit.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
